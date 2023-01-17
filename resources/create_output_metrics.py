@@ -18,8 +18,8 @@ for c in range(0,channels):
 		for t in range(0,frames):
 			imp4.setPositionWithoutUpdate(c,z,t)
 			imp3.setPositionWithoutUpdate(c,z,t)
-			ImageProcessor ip4 = imp4.getProcessor()
-			ImageProcessor ip3 = imp3.getProcessor()
+			ip4 = imp4.getProcessor()
+			ip3 = imp3.getProcessor()
 			for x in range(0,width):
 				for y in range(0,height):
 					summse = summse + ip4.getPixelValue(x,y)
